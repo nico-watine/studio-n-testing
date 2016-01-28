@@ -1,0 +1,27 @@
+@import "neat-helpers";
+
+
+// VARIABLE NAME BASED ON 'MAX' OR 'MIN'
+
+
+$max-770: new-breakpoint(max-width em(770) 10);  // BLUE - Portrait iPad
+
+
+
+// ------------------------------------------------------------------------------------
+
+// BREAKPOINTS FOR GENERAL REFERENCING // PARTIALLY INSPIRED BY BOOTSTRAP ::
+	// THESE USED TO BE THE STANDARD BPs, BUT HAVE SINCE REMOVED THEM COMPLETELY
+		// ONLY BP THAT REMAINS IS $MAX-770 :: THIS IS THE DEFAULT TYPOGRAPHY MEDIA QUERY CHANGE
+
+// $max-1070: new-breakpoint(max-width em(1070) 12); // RED - Landscape iPad
+
+// $max-970: new-breakpoint(max-width em(970) 10);  // PURPLE - Standard 960px
+
+// $max-770: new-breakpoint(max-width em(770) 10);  // BLUE - Portrait iPad
+
+// $max-610: new-breakpoint(max-width em(610) 8); // YELLOW - Certain Landscape Androids
+
+// $max-480: new-breakpoint(max-width em(480) 8); // GREEN - Generic Mobile Landscape
+
+// $max-320: new-breakpoint(max-width em(320) 6); // PURPLE - Generic Mobile Portrait

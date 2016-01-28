@@ -1,0 +1,33 @@
+// # ##############################################################################
+// COPY DESIRED TYPE SCALE INTO 'SCSS/SETTINGS/_SETTINGS.SCSS'
+// # ------------------------------------------------------------------------------
+// LISTED IN ORDER OF INCREASING SCALES
+// SMALLEST TO LARGEST
+// # ##############################################################################
+
+
+// PERFECT FOURTH //
+$h1-size: em(50); 
+$h2-size: em(37); 
+$h3-size: em(28); 
+$h4-size: em(21); 
+$h5-size: em(16); 
+$h6-size: em(12);
+
+
+// AUGMENTED FOURTH //
+$h1-size: em(63); 
+$h2-size: em(45); 
+$h3-size: em(31); 
+$h4-size: em(22); 
+$h5-size: em(16); 
+$h6-size: em(12);
+
+
+// PERFECT FIFTH //
+$h1-size: em(81); 
+$h2-size: em(54); 
+$h3-size: em(36); 
+$h4-size: em(24); 
+$h5-size: em(16); 
+$h6-size: em(12);

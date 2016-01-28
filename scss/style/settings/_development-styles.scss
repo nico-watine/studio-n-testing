@@ -1,0 +1,13 @@
+@import "../settings/_settings.scss";
+
+
+
+
+
+body {
+	@include media($max-770) {
+		background: blue; 
+	}
+}
+
+

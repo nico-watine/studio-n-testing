@@ -1,0 +1,8 @@
+# ORIGINAL .HTACCESS FILE ONLY REDIRECTS STUDIONTESTING.COM TO STUDIONCREATIONS.COM
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^studiontesting\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.studiontesting\.com$
+RewriteRule ^/?$ "http\:\/\/studioncreations\.com\/" [R=301,L]
+

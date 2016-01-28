@@ -1,0 +1,106 @@
+@import "../settings/_settings.scss";
+@import "_fonts.scss";
+
+html {
+	font-size: 1em;
+}
+
+// HAS BEEN COMMENTED OUT BY DEFAULT DUE TO MOBILE PERFORMANCE ISSUES ::
+// html,
+// input,
+// button,
+// textarea {
+// 	-webkit-font-smoothing: antialiased;
+// 	text-rendering: optimizeLegibility;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+body {
+	color: $text-color;
+	font-weight: $body-font-weight;
+	font-family: $body-font-family;
+	line-height: 1.2; // UPDATED FROM 1.4 TO MATCH SKETCH MOCKUPS
+}
+
+p {
+	margin-bottom: $baseline;
+}
+
+a,
+a:visited {
+	color: $link-color;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+
+h1, 
+h2, 
+h3, 
+h4 {
+	margin: 0 0 rem(8);
+	font-weight: $header-font-weight;
+}
+
+h5,
+h6 {
+	margin: 0 0 rem(8);
+	font-weight: $body-font-weight;
+	letter-spacing: $h5-h6-letter-spacing;
+	text-transform: uppercase;
+}
+
+h1 {
+	font-size: $h1-size;
+}
+
+h2 {
+	font-size: $h2-size;
+}
+
+h3 {
+	font-size: $h3-size;
+}
+
+h4,
+p.large {
+	font-size: $h4-size;
+}
+
+h5 {
+	font-size: $h5-size;
+}
+
+h6 {
+	font-size: $h6-size;
+}
+
+@include media($max-770) {
+	
+	h1 {
+		font-size: $h2-size;
+	}
+
+	h2 {
+		font-size: $h3-size;
+	}
+
+	h3 {
+		font-size: $h4-size;
+	}
+
+	h4 {
+		font-size: $h5-size;
+	}
+
+	h5 {
+		font-size: $h6-size;
+	}
+
+	h6 {
+		font-size: $h6-size;
+	}
+}
+

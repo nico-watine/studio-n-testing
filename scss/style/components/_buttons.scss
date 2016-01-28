@@ -1,0 +1,33 @@
+@import "../settings/_settings.scss";
+
+button {
+    border: none;
+}
+
+a.button,
+button {
+    cursor: pointer;
+    line-height: normal;
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    border-radius: rem(5);
+    font-size: $h4-size; 
+    padding: rem(16) rem(32); 
+    text-decoration: none;
+    color: #fff;
+    background-color: #777;
+
+    @include transition (background-color 200ms ease-out 0s);
+    @include transition (color 200ms ease-out 0s);
+
+    &:hover {
+        color: #000;
+        background-color: #ccc;
+    }
+
+    @include media($max-770) {
+        font-size: $h5-size; 
+        padding: rem(13) rem(21) rem(16); 
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../settings/_settings.scss";
+
+code {
+    font-family: Consolas, "Liberation Mono", Courier, monospace;
+    font-weight: 300;
+    color: $text-color;
+    background-color: #f8f8f8;
+    border-width: em(1);
+    border-style: solid;
+    border-color: #dfdfdf;
+    padding: rem(2) rem(5) rem(1);
+}

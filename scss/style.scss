@@ -1,0 +1,29 @@
+// NORMALIZE.CSS
+@import "style/settings/_normalize.scss";
+
+// BOURBON-NEAT FILES
+@import "bourbon";
+@import "grid-settings";
+@import "neat";
+
+// STYLE COMPONENTS
+@import "style/components/_typography.scss";
+@import "style/components/_resets.scss";
+@import "style/components/_buttons.scss";
+@import "style/components/_utility-classes.scss";
+@import "style/components/_extras.scss"; // IMPORT 'EXTRAS' PARTIALS AS NEEDED
+
+
+// STANDARD PAGE BLOCKS
+@import "style/blocks/_body.scss";
+@import "style/blocks/_header.scss";
+@import "style/blocks/_nav.scss"; 
+@import "style/blocks/_main.scss";
+@import "style/blocks/_footer.scss";
+
+// INDIVIDUAL PAGE STYLES
+@import "style/pages/index/_index.scss";
+
+
+// LASTLY IMPORT DEVELOPMENT STYLES, TO BE REMOVED UPON PRODUCTION
+@import "style/settings/_development-styles.scss";

@@ -1,0 +1,6 @@
+# Codekit Files
+config.codekit
+
+# Sublime Text Files
+*.sublime-project
+*.sublime-workspace
