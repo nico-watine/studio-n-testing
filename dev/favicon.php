@@ -12,6 +12,8 @@
 	<link rel="author" href="/humans.txt">
 
 	<!-- <link rel="icon" href="/touch-icon-192x192.png" sizes="192x192"> -->
+	<!-- <link rel="icon" href="/apple-touch-icon-180x180-precomposed.png" sizes="180x180"> -->
+	<link rel="icon" href="/apple-touch-icon-180x180-precomposed.png">
 
 	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
@@ -39,9 +41,25 @@ This is the code to put in HEAD if you WERE to link it :: <br>
 Note how you have to title it with rel="apple-touch-icon" <br>
 The url bar in RETINA shows the proper favicon.ico, the 32X size. <br>
 the url bar in STANDARD shows the proper favicon.ico, the 16X size <br>
-Need to figure out how to test older Safari versions
-
-
+Need to figure out how to test older Safari versions <br> <br>
+<hr>
+<br> <br>
+CHROME <br>
+In Chrome the icon is shown on the left hand side of the page's tab <br>
+If NOTHING is specified in the head, then it uses the standard favicon.ico <br>
+On RETINA it shows 32X size <br>
+On STANDARD it shows 16X size <br>
+If something IS specified in the head, such as &lt;link rel="icon" href="/touch-icon-192x192.png" sizes="192x192"&gt;, it will show touch-icon-192x192.png <br>
+This is the case on any desktop/laptop screen, be it retina or not <br>
+Now note this :: <br>
+If an icon such as 'apple-touch-icon-180x180-precomposed.png' is implicity specified in the head, THAT will be shown. Notice how this icon is titled with 'apple-touch-icon'... This makes me think that for Chrome, the name of the icon is irrelevant. Below is the example link for the head:: <br>
+&lt;link rel="icon" href="/apple-touch-icon-180x180-precomposed.png" sizes="180x180"&gt; <br>
+What will happen if we remove 'sizes' attribute? <br>
+Such as :: <br>
+&lt;link rel="icon" href="/apple-touch-icon-180x180-precomposed.png"&gt; <br>
+The same icon is still displayed like normal -- on the left hand side of the page's tab <br>
+All of these ideas at the moment ONLY APPLY to desktop versions of Chrome, NOT mobile. <br>
+Mobile Chrome is still to be tested (both iOS and Android)
 
 </body>
 </html>

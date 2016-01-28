@@ -202,5 +202,3 @@ a.button:hover, button:hover { color: #000; background-color: #ccc; }
 .m-x { margin: 0 1em; }
 
 .m-0 { margin: 0; }
-
-@media screen and (max-width: 48.125em) { body { background: blue; } }
