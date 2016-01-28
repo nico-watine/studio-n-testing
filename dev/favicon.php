@@ -12,6 +12,7 @@
 	<link rel="author" href="/humans.txt">
 
 	<!-- <link rel="icon" href="/touch-icon-192x192.png" sizes="192x192"> -->
+	<!-- <link rel="icon" href="/touch-icon-192x192.png"> -->
 	<!-- <link rel="icon" href="/apple-touch-icon-180x180-precomposed.png" sizes="180x180"> -->
 	<link rel="icon" href="/apple-touch-icon-180x180-precomposed.png">
 
@@ -31,7 +32,7 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	<![endif]-->
 </head>
-<body>
+<body style="padding-bottom: 150px;">
 
 SAFARI 9<br>
 Seems like for safari desktop v9, just need 'apple-touch-icon.png' and DO NOT need to link it in head. This is what is displayed in the 'favorites' pane, NOT the url bar. <br>
@@ -59,7 +60,33 @@ Such as :: <br>
 &lt;link rel="icon" href="/apple-touch-icon-180x180-precomposed.png"&gt; <br>
 The same icon is still displayed like normal -- on the left hand side of the page's tab <br>
 All of these ideas at the moment ONLY APPLY to desktop versions of Chrome, NOT mobile. <br>
-Mobile Chrome is still to be tested (both iOS and Android)
+Mobile Chrome is still to be tested (both iOS and Android) <br> <br>
+<hr>
+<br> <br>
+FIREFOX <br>
+In Firefox, the icon is shown on the left hand size of the page's tab (just like chrome) <br>
+If NOTHING is linked in the head, it will show favicon.ico <br>
+On RETINA, it will display 64X size of favicon.ico <br>
+NOTE how this is larger than Chrome and Safari, which both display the 32X size of favicon.ico <br>
+Again, this is just RETINA <br>
+On STANDARD, it displays favicon.ico 16X size - the same as Chrome and Safari <br>
+If something IS linked in the head, such as : <br>
+&lt;link rel="icon" href="/touch-icon-192x192.png" sizes="192x192"&gt; <br>
+It will show the 'touch-icon-192x192.png' on BOTH RETINA and STANDARD screens <br>
+What happens if 'sizes="192x192"' is removed? (Just like we did on Firefox...) <br>
+If this is linked : &lt;link rel="icon" href="/touch-icon-192x192.png"&gt; <br>
+Then 'touch-icon-192x192.png' is still shown (this is the same trait as Chrome) <br>
+And now if we use an icon the begins with 'apple-touch-icon-XXX' (will test with both numeric size and without) <br>
+Example for head : <br>
+&lt;link rel="icon" href="/apple-touch-icon-180x180-precomposed.png" sizes="180x180"&gt; <br>
+Then 'apple-touch-icon-180x180-precomposed.png' is displayed as page icon (in page tab) <br>
+And now without 'sizes="180x180"'? <br>
+&lt;link rel="icon" href="/apple-touch-icon-180x180-precomposed.png"&gt; <br>
+Same result as with 'sizes="180x180"', displays 'apple-touch-icon-180x180-precomposed.png'
+
+
+
+
 
 </body>
 </html>
